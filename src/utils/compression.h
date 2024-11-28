@@ -2,6 +2,7 @@
 
 #include <iostream>
 #include <stdexcept>
+#include <cstdint>
 
 namespace troy::utils::compression {
 

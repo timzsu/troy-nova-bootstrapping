@@ -22,3 +22,6 @@
 #include "app/matmul.h"
 #include "app/conv2d.h"
 #include "app/bfv_ring2k.h"
+
+#include "bootstrapping/ckks_evaluator.cuh"
+#include "bootstrapping/Bootstrapper.cuh"

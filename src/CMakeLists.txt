@@ -11,8 +11,8 @@ set_target_properties(troy PROPERTIES CUDA_SEPERABLE_COMPILATION ON)
 target_compile_definitions(troy        PRIVATE CUDA_API_PER_THREAD_DEFAULT_STREAM)
 target_compile_definitions(troy_static PRIVATE CUDA_API_PER_THREAD_DEFAULT_STREAM)
 
-target_link_libraries(troy PUBLIC Threads::Threads)
-target_link_libraries(troy_static PUBLIC Threads::Threads)
+target_link_libraries(troy PUBLIC Threads::Threads ntl gmp m pthread)
+target_link_libraries(troy_static PUBLIC Threads::Threads ntl gmp m pthread)
 
 set(gcc_like_cxx "$<COMPILE_LANG_AND_ID:CXX,ARMClang,AppleClang,Clang,GNU>")
 set(nvcc_cxx "$<COMPILE_LANG_AND_ID:CUDA,NVIDIA>")

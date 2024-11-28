@@ -31,6 +31,7 @@ int main()
         cout << "| 15. Batched Operation      | 15_batched_operation.cu    |" << endl;
         cout << "| 20. Memory Pools           | 20_memory_pools.cu         |" << endl;
         cout << "| 30. Issue of Multithread   | 30_issue_multithread.cu    |" << endl;
+        cout << "| 40. Bootstrapping   | 40_bootstrapping.cu    |" << endl;
         cout << "| 99. Quickstart             | 99_quickstart.cu           |" << endl;
         cout << "+----------------------------+----------------------------+" << endl;
 
@@ -115,6 +116,10 @@ int main()
 
         case 30:
             example_issue_multithread();
+            break;
+
+        case 40:
+            example_bootstrapping();
             break;
 
         case 99:
